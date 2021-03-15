@@ -61,9 +61,9 @@ Btn.addEventListener("click", () => {
 
     })
 
-    recognition.addEventListener("end", () => {
-        recognition.start();
-    })
+    // recognition.addEventListener("end", () => {
+    //     recognition.start();
+    // })
     recognition.start();
 
 })
