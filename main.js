@@ -17,6 +17,10 @@ Btn.addEventListener("click", () => {
         p.innerHTML = value
         Text.appendChild(p);
         const utter = new SpeechSynthesisUtterance(value);
+        var voices = speechSynthesis.getVoices();
+        console.log(voices);
+        utter.voice = voices[0];
+        utter.lang = 'en-US';
         synth.speak(utter);
     }
 
@@ -41,8 +45,8 @@ Btn.addEventListener("click", () => {
             } else if (text.includes("what is date today")) {
                 const Time = new Date().toDateString();
                 ReplyText(Time);
-            } else if (!text.indexOf(text)) {
-                ReplyText("I am Not Listening");
+            } else {
+                ReplyText("I am Not Understand");
             }
 
             // var val = "";
