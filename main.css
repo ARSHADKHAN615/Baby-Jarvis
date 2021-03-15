@@ -55,16 +55,17 @@ section p {
 }
 
 #btn {
-    width: 150px;
+    width: 100px;
     display: inline-block;
     margin: 10px auto;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     background-color: khaki;
     border: none;
     border-radius: 0.5rem;
     outline: none;
+    padding: 5px 10px;
     transition: all 0.5s;
 }
 
